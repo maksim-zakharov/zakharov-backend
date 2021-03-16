@@ -1,15 +1,23 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "declaration": true,
-    "removeComments": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
-    "target": "es2017",
-    "sourceMap": true,
-    "outDir": "./dist",
     "baseUrl": "./",
-    "incremental": true
+    "preserveConstEnums": true,
+    "emitDecoratorMetadata": true,
+    "strictNullChecks": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "target": "es5",
+    "outDir": ".build",
+    "moduleResolution": "node",
+    "lib": [
+      "es2015"
+    ],
+    "rootDir": "./",
+    "paths": {
+      "*": [
+        "*",
+        "src/*"
+      ]
+    }
   }
 }
