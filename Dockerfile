@@ -12,6 +12,8 @@ RUN apk add --update python make g++\
 
 RUN npm install
 
+RUN npm install -g @nestjs/cli
+
 COPY . .
 
 # Сбилдим бек
